@@ -8,12 +8,12 @@ public class DataEntryProcessor {
         this.strategy = strategy;
     }
 
-    public String run(String input) {
+    public String run(String text) {
         if (strategy == null) {
             throw new IllegalStateException("No processing strategy configured!");
         }
 
-        return strategy.process(input);
+        return strategy.process(text);
     }
 
 }

@@ -3,8 +3,8 @@ package edu.pitt.se;
 public class PatientDataStrategy implements DataProcessingStrategy{
     // TODO: implement.
     @Override
-    public String process(String input){
-        String result = input;
+    public String process(String text){
+        String result = text;
 
         // Check record structure
         if (!result.contains("Name") || !result.contains("Condition")) {
